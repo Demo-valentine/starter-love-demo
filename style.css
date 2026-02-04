@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffe6ee, #f7b2c4);
+  color: #c83a6f;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1.5s ease;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #c83a6f;
+}
+
+.title span {
+  color: #e63946;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.heart {
+  font-size: 3rem;
+  margin-top: 20px;
+  color: #e63946;
+  animation: pulse 1.2s infinite;
+}
+
+/* CONTENT */
+.content {
+  padding: 40px 20px;
+}
+
+.content img {
+  width: 80%;
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(200, 58, 111, 0.25);
+  margin-bottom: 20px;
+}
+
+.message {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* VALENTINE SECTION */
+.valentine {
+  padding: 40px 20px;
+}
+
+.valentine h2 {
+  margin-bottom: 20px;
+  color: #c83a6f;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  padding: 12px 22px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#yesBtn {
+  background: #e63946;
+  color: #fff;
+}
+
+#noBtn {
+  background: #f4a3b4;
+  color: #fff;
+}
+
+#response {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  font-size: 0.9rem;
+  opacity: 0.6;
+  color: #c83a6f;
+}
+
+/* ANIMATIONS (minimal) */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
